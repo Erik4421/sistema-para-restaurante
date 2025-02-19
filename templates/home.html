@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">Início</a>
+    </nav>
+
+    <h1>Home</h1>
+
+    <div class="container-cards">
+        <a href="/menu" class="button-link">
+            <div class="cards">
+                <img src="https://fornerialuce.com.br/media/magefan_blog/bebidas-alcoolicas.jpg" alt="" class="img-cards">
+                <h3>Bebidas</h3>
+            </div>
+        </a>
+
+        <a href="/menu" class="button-link">
+            <div class="cards">
+                <img src="https://jeonline.com.br/images/noticias/32921/11043651_11._Prato_.jpg" alt="" class="img-cards">
+                <h3>Entradas</h3>
+            </div>
+        </a>
+
+        <a href="/menu" class="button-link">
+            <div class="cards">
+                <img src="https://www.socialbauru.com.br/wp-content/uploads/2024/05/categoria-prato-principal-3.jpg" alt="" class="img-cards">
+                <h3>Pratos principais</h3>
+                <p>Principais refeições do restaurante, almoço e janta. Diversas opções como (carne, arroz e feijão)</p>
+            </div>
+        </a>
+
+        <a href="/menu" class="button-link">
+            <div class="cards">
+                <img src="https://ellebrasil-wp-images.s3.amazonaws.com/2022/09/image-288.jpg" alt="" class="img-cards">
+                <h3>Sobremesas</h3>
+            </div>
+        </a>
+    </div>
+    
+
+    <script>
+        const typebotInitScript = document.createElement("script");
+        typebotInitScript.type = "module";
+        typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
+
+        Typebot.initBubble({
+            typebot: "my-typebot-oz9e8am",
+            theme: { button: { backgroundColor: "#1D1D1D" } },
+        });
+        `;
+        document.body.append(typebotInitScript);W
+    </script>
+
+</body>
+</html>
