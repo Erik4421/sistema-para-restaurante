@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Pedido - Bom-Sabor</title>
+</head>
+<body>
+    <h1>Seu Pedido</h1>
+    <div>
+        {% for item in order %}
+            <div>
+                <h3>{{ item.name }} - R$ {{ item.price }}</h3>
+            </div>
+        {% endfor %}
+    </div>
+    <h3>Total: R$ {{ total }}</h3>
+    <a href="/"><button>Finalizar Pedido</button></a>
+</body>
+</html>

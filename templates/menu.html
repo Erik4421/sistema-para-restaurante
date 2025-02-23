@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico.png') }}">
-    <title>Restaurante Bom Sabor</title>
+    <title>Menu - Bom Sabor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -13,7 +13,16 @@
     </nav>
 
     <h1>Menu</h1>
-
+    <div>
+        {% for item in menu_items %}
+        <div>
+            <h3>{{item.name}} - R$ {{item.price}}</h3>
+            <a href="/add_to_order/{{item.id}}">
+            <button>Adicionar ao Pedido</button>
+        </div>
+        {% endfor %}
+    </div><br>
+    <a href="/"><button>Voltar para Início</button></a>
 </body>
 </html>
 
