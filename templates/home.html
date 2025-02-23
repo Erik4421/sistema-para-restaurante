@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico.png') }}">
     <title>Restaurante Bom-Sabor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
 </head>
 <body>
     <nav class="navbar">
@@ -32,7 +33,6 @@
             <div class="cards">
                 <img src="https://www.socialbauru.com.br/wp-content/uploads/2024/05/categoria-prato-principal-3.jpg" alt="" class="img-cards">
                 <h3>Pratos principais</h3>
-                <p>Principais refeições do restaurante, almoço e janta. Diversas opções como (carne, arroz e feijão)</p>
             </div>
         </a>
 
@@ -53,7 +53,7 @@
         Typebot.initBubble({
             typebot: "my-typebot-oz9e8am",
             theme: { button: { backgroundColor: "#1D1D1D" }, chatWindow: { 
-            maxHeight: 'calc(-450px + 100vh)', maxWidth: 'calc(-550px + 100vh)' } },
+            maxHeight: 'calc(100vh - 50vh)', maxWidth: '40vh' } },
         });
         `;
         document.body.append(typebotInitScript);

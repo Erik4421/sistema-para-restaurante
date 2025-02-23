@@ -1,0 +1,26 @@
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background: #008CBA;
+    color: white;
+}
+tr:hover {
+    background: #f1f1f1;
+}
+
+@media screen and (max-width: 800px) {
+    table {
+        width: 90%;
+    }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico.png') }}">
+    <title>Restaurante Bom Sabor</title>>
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='manager/manager.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LOGIN</h1>
+        <form action="" method="POST">
+            <input type="text" id="username" name="username" placeholder="Usuário" required>
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

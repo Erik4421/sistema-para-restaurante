@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico.png') }}">
+    <title>Restaurante Bom Sabor</title>>
+    <link rel="stylesheet" href="{{ url_for('static', filename='manager/manager_products.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='products.css') }}">
+    <style>
+        .container form button {
+            background: rgb(190, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modificar Produtos</h1>
+        <form action="" method="POST">
+            <input type="text" id="id-products" name="id-products" placeholder="Id">
+            <button type="submit">Remover</button>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Batata</td>
+                <td>battato, com batata</td>
+                <td>R$ 25,10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Canja</td>
+                <td>FRANGO E ARROZ</td>
+                <td>R$ 2,10</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Churras</td>
+                <td>Folha e alface</td>
+                <td>R$ 5,10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
