@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
     height: 100vh;
@@ -37,6 +36,16 @@ body {
     font-size: large;
     padding: 5px;
     transition: 0.2s;
+}
+select {
+    color: gray;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 30px;
+    font-size: large;
+    padding: 5px;
+    transition: 0.2s; 
 }
 
 .container form input:hover {

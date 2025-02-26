@@ -11,10 +11,16 @@
 <body>
     <div class="container">
         <h1>Adicionar Produtos</h1>
-        <form action="" method="POST">
-            <input type="text" id="name-products" name="products" placeholder="Nome" required>
-            <input type="text" id="description-products" name="description" placeholder="Descrição" required>
-            <input type="text" id="price-products" name="products" placeholder="Preço" required>
+        <form action="/gerente/gerenciamento/add" method="POST">
+            <input type="text" id="name-products" name="name-products" placeholder="Nome" required>
+            <input type="text" id="description-products" name="description-products" placeholder="Descrição" required>
+            <input type="number" step="0.01" id="price-products" name="price-products" placeholder="Preço" required>
+            <select id="category-products" name="category-products">
+                <option value="1">Bebidas</option>
+                <option value="2">Entradas</option>
+                <option value="3">Pratos Principais</option>
+                <option value="4">Sobremesas</option>
+            </select>
             <button type="submit">Registrar</button>
         </form>
     </div>
@@ -25,24 +31,18 @@
                 <th>Nome</th>
                 <th>Descrição</th>
                 <th>Preço</th>
+                <th>Categoria</th>
             </tr>
         </thead>
         <tbody>
+            {% for product in list %}
             <tr>
-                <td>Batata</td>
-                <td>battato, com batata</td>
-                <td>R$ 25,10</td>
+                <td>{{product[1]}}</td>
+                <td>{{product[2]}}</td>
+                <td>{{product[3]}}</td>
+                <td>{{product[5]}}</td>
             </tr>
-            <tr>
-                <td>Canja</td>
-                <td>FRANGO E ARROZ</td>
-                <td>R$ 2,10</td>
-            </tr>
-            <tr>
-                <td>Churras</td>
-                <td>Folha e alface</td>
-                <td>R$ 5,10</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </body>

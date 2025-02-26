@@ -24,21 +24,13 @@
             </tr>
         </thead>
         <tbody>
+            {% for product in list %}
             <tr>
-                <td>Batata</td>
-                <td>battato, com batata</td>
-                <td>R$ 25,10</td>
+                <td>{{product[1]}}</td>
+                <td>{{product[2]}}</td>
+                <td>{{product[3]}}</td>
             </tr>
-            <tr>
-                <td>Canja</td>
-                <td>FRANGO E ARROZ</td>
-                <td>R$ 2,10</td>
-            </tr>
-            <tr>
-                <td>Churras</td>
-                <td>Folha e alface</td>
-                <td>R$ 5,10</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </body>
